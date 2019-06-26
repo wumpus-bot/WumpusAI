@@ -9,7 +9,7 @@
       "query_name": "whoami"
     },
     {
-      "questions": ["What can you do?", "Tell me your commands", "Help me"],
+      "questions": ["What can you do?", "Tell me your commands", "Show me what you can do"],
       "query_name": "help"
     }
   ]

@@ -1,0 +1,7 @@
+**/.idea
+**/venv
+**/__pycache__/**
+
+# MagOS
+**/.DS_Store
+**/._**

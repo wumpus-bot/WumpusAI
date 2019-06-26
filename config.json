@@ -1,0 +1,16 @@
+{
+  "modules": [
+    {
+      "questions": ["What's Discords status?", "Show me Discords server status", "What's the status of the Discord servers"],
+      "query_name": "discord_status"
+    },
+    {
+      "questions": ["Who are you?", "Who build you?", "What's your name?"],
+      "query_name": "whoami"
+    },
+    {
+      "questions": ["What can you do?", "Tell me your commands", "Help me"],
+      "query_name": "help"
+    }
+  ]
+}

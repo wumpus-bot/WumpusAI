@@ -1,16 +1,94 @@
 {
-  "modules": [
+  "data": [
     {
-      "questions": ["What's Discords status?", "Show me Discords server status", "What's the status of the Discord servers"],
-      "query_name": "discord_status"
+      "input": "server status",
+      "output": "discord_status",
+      "args": -1
     },
     {
-      "questions": ["Who are you?", "Who build you?", "What's your name?"],
-      "query_name": "whoami"
+      "input": "how are the discord servers",
+      "output": "discord_status",
+      "args": -1
     },
     {
-      "questions": ["What can you do?", "Tell me your commands", "Show me what you can do"],
-      "query_name": "help"
+      "input": "what is discords server status",
+      "output": "discord_status",
+      "args": -1
+    },
+    {
+      "input": "whats discords server status",
+      "output": "discord_status",
+      "args": -1
+    },
+    {
+      "input": "tell me the discord server status",
+      "output": "discord_status",
+      "args": -1
+    },
+    {
+      "input": "can you tell me the discord server status",
+      "output": "discord_status",
+      "args": -1
+    },
+    {
+      "input": "discord srever status",
+      "output": "discord_status",
+      "args": -1
+    },
+    {
+      "input": "who are you",
+      "output": "whoami",
+      "args": -1
+    },
+    {
+      "input": "tell me about yourself",
+      "output": "whoami",
+      "args": -1
+    },
+    {
+      "input": "can you tell me who you are",
+      "output": "whoami",
+      "args": -1
+    },
+    {
+      "input": "tell me infos about you",
+      "output": "whoami",
+      "args": -1
+    },
+    {
+      "input": "tell me information about you",
+      "output": "whoami",
+      "args": -1
+    },
+    {
+      "input": "commands",
+      "output": "help",
+      "args": -1
+    },
+    {
+      "input": "what can you do",
+      "output": "help",
+      "args": -1
+    },
+    {
+      "input": "tell me your features",
+      "output": "help",
+      "args": -1
+    },
+    {
+      "input": "tell me what you can do",
+      "output": "help",
+      "args": -1
+    },
+    {
+      "input": "list your features",
+      "output": "help",
+      "args": -1
+    },
+    {
+      "input": "list your commands",
+      "output": "help",
+      "args": -1
     }
   ]
 }

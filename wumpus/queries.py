@@ -3,7 +3,7 @@ def discord_status():
 
 
 def whoami():
-    return "I am discord bot created for the first discord hack week. "\
+    return "I am a discord bot created for the first discord hack week. "\
            "You can fully control me within voice chat"
 
 

@@ -31,7 +31,7 @@
       "args": -1
     },
     {
-      "input": "discord srever status",
+      "input": "discord server status",
       "output": "discord_status",
       "args": -1
     },

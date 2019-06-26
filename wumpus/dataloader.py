@@ -1,6 +1,6 @@
 import json
 
-from wumpus.neuralnetwork import train
+from wumpus.neuralnetwork import train, create_network
 
 
 def configure(config: str = "config.json"):
@@ -14,5 +14,6 @@ def configure(config: str = "config.json"):
             inp.append(question)
             out.append(data["modules"].index(module))
         queries.append(module["query_name"])
+    create_network(len(data["modules"]))
     train(inp, out)
     return queries

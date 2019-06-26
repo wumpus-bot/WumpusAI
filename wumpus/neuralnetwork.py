@@ -11,15 +11,7 @@ import numpy as np
 
 print(tf.__version__)
 
-model = keras.Sequential([
-    keras.layers.Flatten(input_shape=(128,)),
-    keras.layers.Dense(36, activation=tf.nn.relu),
-    keras.layers.Dense(3, activation=tf.nn.softmax)
-])
-
-model.compile(optimizer='adam',
-              loss='sparse_categorical_crossentropy',
-              metrics=['accuracy'])
+model = None
 
 
 def string_to_int(input: str):
@@ -34,6 +26,19 @@ def string_to_int(input: str):
         # hopefully this doesn't happen
         raw_list = input[:len(input)-128]
     return [(ord(x) / 256) for x in raw_list]
+
+
+def create_network(mod_count: int):
+    global model
+    model = keras.Sequential([
+        keras.layers.Flatten(input_shape=(128,)),
+        keras.layers.Dense(36, activation=tf.nn.relu),
+        keras.layers.Dense(mod_count, activation=tf.nn.softmax)
+    ])
+
+    model.compile(optimizer='adam',
+                  loss='sparse_categorical_crossentropy',
+                  metrics=['accuracy'])
 
 
 def train(inp: list, output: list):
